@@ -4,7 +4,293 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/style/style.css" />
     <title>Marikina Hotel</title>
   </head>
-  <body></body>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img
+            src="./src/img/logo/hotel-logo.png"
+            class="logo-hotel"
+            alt="logo"
+        /></a>
+        <div class="nav-links">
+          <ul id="menu">
+            <li><a href="#" class="">HOME</a></li>
+            <li><a href="#" class="">ROOMS</a></li>
+            <li><a href="#" class="">MEETING ROOMS</a></li>
+            <li><a href="#" class="">DISCOVER</a></li>
+            <li><a href="#" class="">GALLERY</a></li>
+            <li><a href="#" class="">SERVICES</a></li>
+            <li><a href="#" class="">CONTACT</a></li>
+            <li><a href="#" class="Active">BOOK NOW</a></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <section>
+      <div class="hero-section">
+        <div class="container-fluid">
+          <div class="text-background">
+            <div class="hero text">
+              <h3>A VIEW FROM THE TOP</h3>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <div class="hero">
+                <iframe
+                  width="500"
+                  height="300"
+                  src="https://www.youtube.com/embed/LvFc1vdjhZw"
+                ></iframe>
+              </div>
+            </div>
+            <div class="column">
+              <div class="hero topview">
+                <p>
+                  Kick off your urban adventures with a new perspective on
+                  Marikina Hotel. Standing tall above the Manila skyline, the
+                  Hotel gives you a city view with a difference – come join us
+                  up here and experience a stay like no other.
+                </p>
+
+                <p>
+                  From your sky-high base in the fashion district, you are all
+                  set to conquer the city in style. Wake up to the Hotel’s
+                  oh-so-chic rooms and suites, and turbo charge with a workout
+                  at the Urban Spa & Fitness. Need to boss your own meetings?
+                  Events & meeting spaces await.
+                </p>
+
+                <p>
+                  After your busy day, retreat back to the Hotel with great food
+                  and a social drink. Sit back and unwind as you soak up the
+                  friendly atmosphere; today you’ve done good, and now you’ve
+                  made it back to one of the best hotels to stay in Metro
+                  Manila, where you’re about to enjoy the sweetest night’s sleep
+                  in the city.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid">
+        <div class="text-background">
+          <div class="hero text">
+            <h3>ROOMS & SUITES</h3>
+          </div>
+        </div>
+        <div class="carousel-slider">
+          <div class="carousel-slide carousel-slider">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#myCarousel"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img
+                    src="./src/img/rooms/room01.jpg"
+                    alt="Deluxe Room"
+                    style="width: 100%"
+                  />
+                  <div class="text-background carousel-slider-information">
+                    <h3>Deluxe Room</h3>
+                    <p>
+                      Choose a Superior Room for your holiday in Makati City.
+                      With a bright modern décor, a host of special features and
+                      space for up to two adults and two children (under 16),
+                      these rooms are designed for your comfort and convenience.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img
+                    src="./src/img/rooms/room03.jpg"
+                    alt="Superior Room"
+                    style="width: 100%"
+                  />
+                  <div class="text-background carousel-slider-information">
+                    <h3>Superior Room</h3>
+                    <p>
+                      Choose a Superior Room for your holiday in Makati City.
+                      With a bright modern décor, a host of special features and
+                      space for up to two adults and two children (under 16),
+                      these rooms are designed for your comfort and convenience.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img
+                    src="./src/img/rooms/room04.jpg"
+                    alt="Premium Room"
+                    style="width: 100%"
+                  />
+                  <div class="text-background carousel-slider-information">
+                    <h3>Premium Room</h3>
+                    <p>
+                      Choose a Superior Room for your holiday in Makati City.
+                      With a bright modern décor, a host of special features and
+                      space for up to two adults and two children (under 16),
+                      these rooms are designed for your comfort and convenience.
+                    </p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img
+                    src="./src/img/rooms/room05.jpg"
+                    alt="Executive Room"
+                    style="width: 100%"
+                  />
+                  <div class="text-background carousel-slider-information">
+                    <h3>Executive Room</h3>
+                    <p>
+                      Choose a Superior Room for your holiday in Makati City.
+                      With a bright modern décor, a host of special features and
+                      space for up to two adults and two children (under 16),
+                      these rooms are designed for your comfort and convenience.
+                    </p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img
+                    src="./src/img/rooms/room06.jpg"
+                    alt="Panorama Room"
+                    style="width: 100%"
+                  />
+                  <div class="text-background carousel-slider-information">
+                    <h3>Panorama Room</h3>
+                    <p>
+                      Choose a Superior Room for your holiday in Makati City.
+                      With a bright modern décor, a host of special features and
+                      space for up to two adults and two children (under 16),
+                      these rooms are designed for your comfort and convenience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Left and right controls -->
+              <a
+                class="left carousel-control"
+                href="#myCarousel"
+                data-slide="prev"
+              >
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="right carousel-control"
+                href="#myCarousel"
+                data-slide="next"
+              >
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatibus
+      placeat, vitae provident inventore iure magni enim ullam suscipit itaque
+      perspiciatis, obcaecati illum molestias? Nisi, dicta suscipit! Consectetur
+      esse pariatur facere, quas repudiandae sit praesentium aspernatur
+      perspiciatis maiores iusto nihil rerum ea minus temporibus ut ullam?
+      Nesciunt atque dolorum magnam.
+    </p>
+
+    <p class="text text-background">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatibus
+      placeat, vitae provident inventore iure magni enim ullam suscipit itaque
+      perspiciatis, obcaecati illum molestias? Nisi, dicta suscipit! Consectetur
+      esse pariatur facere, quas repudiandae sit praesentium aspernatur
+      perspiciatis maiores iusto nihil rerum ea minus temporibus ut ullam?
+      Nesciunt atque dolorum magnam.
+    </p>
+
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatibus
+      placeat, vitae provident inventore iure magni enim ullam suscipit itaque
+      perspiciatis, obcaecati illum molestias? Nisi, dicta suscipit! Consectetur
+      esse pariatur facere, quas repudiandae sit praesentium aspernatur
+      perspiciatis maiores iusto nihil rerum ea minus temporibus ut ullam?
+      Nesciunt atque dolorum magnam.
+    </p>
+
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatibus
+      placeat, vitae provident inventore iure magni enim ullam suscipit itaque
+      perspiciatis, obcaecati illum molestias? Nisi, dicta suscipit! Consectetur
+      esse pariatur facere, quas repudiandae sit praesentium aspernatur
+      perspiciatis maiores iusto nihil rerum ea minus temporibus ut ullam?
+      Nesciunt atque dolorum magnam.
+    </p>
+
+    <script>
+      var navbar = document.getElementById("navbar");
+      var menu = document.getElementById("menu");
+
+      window.onscroll = function () {
+        if (window.pageYOffset >= menu.offsetHeight) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      };
+    </script>
+  </body>
 </html>
