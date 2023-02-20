@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Marikina Hotel</title>
+  </head>
+
+  <body>
+    <section class="header">
+      <nav class="text-background">
+        <a href="/index.html"
+           class="title"><img
+            src="../src/img/logo/hotel-logo.png"
+            class="logo-hotel"
+            alt="logo"
+        /><label>Marikina Hotel</label></a>
+        <div class="nav-links">
+          <ul id="menu">
+            <li><a href="/index.html" class="">HOME</a></li>
+            <li><a href="./index.html" class="">ROOMS</a></li>
+            <li><a href="/meetingroom/index.html" class="">MEETING ROOMS</a></li>
+            <li><a href="/discover/index.html" class="">DISCOVER</a></li>
+            <li><a href="/gallery/index.html" class="">GALLERY</a></li>
+            <li><a href="/services/index.html" class="">SERVICES</a></li>
+            <li><a href="/contact/index.html" class="">CONTACT</a></li>
+            <li><a href="#" class="Active">BOOK NOW</a></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <!-- Rooms section -->
+    <section>
+      <main>
+
+        <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1 class="fw-light">Rooms & Suites</h1>
+            </div>
+          </div>
+        </section>
+      
+        <div class="album py-5 bg-light">
+          <div class="container">
+      
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" src="/src/img/rooms/room01.jpg">
+                  <h4 class="room-title">Deluxe Room</h4>
+                  <div class="card-body">
+                    <p class="card-text">Choose a Superior Room for your holiday in Makati City.
+                      With a bright modern décor, a host of special features and
+                      space for up to two adults and two children (under 16),
+                      these rooms are designed for your comfort and convenience.</p>
+                    <div class="d-flex justify-content-between align-items-center card-btn-group">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm">View Details</button>
+                        
+                        <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#deluxe-room">Book Now</button>
+
+                        <div class="modal fade" id="deluxe-room" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title room-title" id="exampleModalLabel">Deluxe Room</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="checkInDate">Check In</label>
+                                    <input type="date" class="form-control" id="checkInDate">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="checkOutDate">Check Out</label>
+                                    <input type="date" class="form-control" id="checkOutDate">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="adultNumber">Adult</label>
+                                    <select name="adultNumber" id="adultNumber" class="form-control">
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="child">Child</label>
+                                    <select name="child" id="adultNumber" class="form-control">
+                                      <option value="0">0</option>
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="contactNumber">Contact Number</label>
+                                    <input type="text" class="form-control" id="contactNumber" placeholder="Contact Number">
+                                  </div>
+
+                                  
+                                  </select>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-modal">Book Now</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <small class="text-muted">10 views</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" src="/src/img/rooms/room03.jpg">
+                  <h4 class="room-title">Superior Room</h4>
+                  <div class="card-body">
+                    <p class="card-text">Choose a Superior Room for your holiday in Makati City.
+                      With a bright modern décor, a host of special features and
+                      space for up to two adults and two children (under 16),
+                      these rooms are designed for your comfort and convenience.</p>
+                    <div class="d-flex justify-content-between align-items-center card-btn-group">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm">View Details</button>
+                        
+                        <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#superior-room">Book Now</button>
+
+                        <div class="modal fade" id="superior-room" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title room-title" id="exampleModalLabel">Superior Room</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="checkInDate">Check In</label>
+                                    <input type="date" class="form-control" id="checkInDate">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="checkOutDate">Check Out</label>
+                                    <input type="date" class="form-control" id="checkOutDate">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="adultNumber">Adult</label>
+                                    <select name="adultNumber" id="adultNumber" class="form-control">
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="child">Child</label>
+                                    <select name="child" id="adultNumber" class="form-control">
+                                      <option value="0">0</option>
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="contactNumber">Contact Number</label>
+                                    <input type="text" class="form-control" id="contactNumber" placeholder="Contact Number">
+                                  </div>
+
+                                  
+                                  </select>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-modal">Book Now</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <small class="text-muted">10 views</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" src="/src/img/rooms/room08.jpg">
+                  <h4 class="room-title">Premium Room</h4>
+                  <div class="card-body">
+                    <p class="card-text">Choose a Premium Room for your holiday in Makati City.
+                      With a bright modern décor, a host of special features and
+                      space for up to two adults and two children (under 16),
+                      these rooms are designed for your comfort and convenience.</p>
+                    <div class="d-flex justify-content-between align-items-center card-btn-group">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm">View Details</button>
+                        <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#premium-room">Book Now</button>
+
+                        <div class="modal fade" id="premium-room" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title room-title" id="exampleModalLabel">Premium Room</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="checkInDate">Check In</label>
+                                    <input type="date" class="form-control" id="checkInDate">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="checkOutDate">Check Out</label>
+                                    <input type="date" class="form-control" id="checkOutDate">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="adultNumber">Adult</label>
+                                    <select name="adultNumber" id="adultNumber" class="form-control">
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="child">Child</label>
+                                    <select name="child" id="adultNumber" class="form-control">
+                                      <option value="0">0</option>
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="contactNumber">Contact Number</label>
+                                    <input type="text" class="form-control" id="contactNumber" placeholder="Contact Number">
+                                  </div>
+
+                                  
+                                  </select>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-modal">Book Now</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <small class="text-muted">10 views</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" src="/src/img/rooms/room05.jpg">
+                  <h4 class="room-title">Executive Room</h4>
+                  <div class="card-body">
+                    <p class="card-text">Choose a Executtive Room for your holiday in Makati City.
+                      With a bright modern décor, a host of special features and
+                      space for up to two adults and two children (under 16),
+                      these rooms are designed for your comfort and convenience.</p>
+                    <div class="d-flex justify-content-between align-items-center card-btn-group">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm">View Details</button>
+                        <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#executive-room">Book Now</button>
+
+                        <div class="modal fade" id="executive-room" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title room-title" id="exampleModalLabel">Executive Room</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="checkInDate">Check In</label>
+                                    <input type="date" class="form-control" id="checkInDate">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="checkOutDate">Check Out</label>
+                                    <input type="date" class="form-control" id="checkOutDate">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="adultNumber">Adult</label>
+                                    <select name="adultNumber" id="adultNumber" class="form-control">
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="child">Child</label>
+                                    <select name="child" id="adultNumber" class="form-control">
+                                      <option value="0">0</option>
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="contactNumber">Contact Number</label>
+                                    <input type="text" class="form-control" id="contactNumber" placeholder="Contact Number">
+                                  </div>
+
+                                  
+                                  </select>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-modal">Book Now</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <small class="text-muted">10 views</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" src="/src/img/rooms/room06.jpg">
+                  <h4 class="room-title">Panorama Room</h4>
+                  <div class="card-body">
+                    <p class="card-text">Choose a Panorama Room for your holiday in Makati City.
+                      With a bright modern décor, a host of special features and
+                      space for up to two adults and two children (under 16),
+                      these rooms are designed for your comfort and convenience.</p>
+                    <div class="d-flex justify-content-between align-items-center card-btn-group">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm">View Details</button>
+                        <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#panorama-room">Book Now</button>
+
+                        <div class="modal fade" id="panorama-room" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title room-title" id="exampleModalLabel">Panorama Room</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="checkInDate">Check In</label>
+                                    <input type="date" class="form-control" id="checkInDate">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="checkOutDate">Check Out</label>
+                                    <input type="date" class="form-control" id="checkOutDate">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="adultNumber">Adult</label>
+                                    <select name="adultNumber" id="adultNumber" class="form-control">
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="child">Child</label>
+                                    <select name="child" id="adultNumber" class="form-control">
+                                      <option value="0">0</option>
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="contactNumber">Contact Number</label>
+                                    <input type="text" class="form-control" id="contactNumber" placeholder="Contact Number">
+                                  </div>
+
+                                  
+                                  </select>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-modal">Book Now</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <small class="text-muted">10 views</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" src="/src/img/rooms/room02.jpg">
+                  <h4 class="room-title">Presidential Suites</h4>
+                  <div class="card-body">
+                    <p class="card-text">Choose a Presidential Suites for your holiday in Makati City.
+                      With a bright modern décor, a host of special features and
+                      space for up to two adults and two children (under 16),
+                      these rooms are designed for your comfort and convenience.</p>
+                    <div class="d-flex justify-content-between align-items-center card-btn-group">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm">View Details</button>
+                        <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModal">Book Now</button>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title room-title" id="exampleModalLabel">Presidential Suties</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="checkInDate">Check In</label>
+                                    <input type="date" class="form-control" id="checkInDate">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="checkOutDate">Check Out</label>
+                                    <input type="date" class="form-control" id="checkOutDate">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="adultNumber">Adult</label>
+                                    <select name="adultNumber" id="adultNumber" class="form-control">
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="child">Child</label>
+                                    <select name="child" id="adultNumber" class="form-control">
+                                      <option value="0">0</option>
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="contactNumber">Contact Number</label>
+                                    <input type="text" class="form-control" id="contactNumber" placeholder="Contact Number">
+                                  </div>
+
+                                  
+                                  </select>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-modal">Book Now</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <small class="text-muted">10 views</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </main>
+
+    </section>
+
+    <section class="footer">
+      <div class="container-fluid text-center text-md-start mt-5 text-background text">
+        <!-- Grid row -->
+        <div class="row mt-3">
+         
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary"></i>
+             Marikina Hotel
+            </h6>
+            <p>
+              The Marikina Hotel is a unique property, convenient for your business visits, family and city breaks lovers.
+            </p>
+          </div>
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Services
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Rooms</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Meeting Rooms</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Discover</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Gallery</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Services</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Contact</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              General
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">General Terms & Condition of Sale</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Privacy</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Cookie Policy</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Digital Policy</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i> Mariki City Metro Manila Philippines</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              marikina-hotel@marikinahotel.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> + 639 123 412 385</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> + 632 888 888 88</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2023 All Rights Reserved
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+    <script>
+      var navbar = document.getElementById("navbar");
+      var menu = document.getElementById("menu");
+
+      window.onscroll = function () {
+        if (window.pageYOffset >= menu.offsetHeight) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      };
+    </script>
+  </body>
+</html>
